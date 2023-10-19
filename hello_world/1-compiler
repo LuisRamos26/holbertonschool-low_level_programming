@@ -1,2 +1,2 @@
 #!/bin/bash
-asdasd
+gcc $CFILE -E -o o
