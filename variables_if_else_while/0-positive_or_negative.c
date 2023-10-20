@@ -24,9 +24,9 @@ int main(void)
 		{
 		printf("%lu is zero\n", (unsigned long)sizeof(n));
 		}                                                                                                                                                                   			} 		
-		else  
-       			{                                                                                                  
-			printf("%lu is negative\n", (unsigned long)sizeof(n));                                           
-	      		}     
+	else  
+       		{                                                                                                  
+		printf("%lu is negative\n", (unsigned long)sizeof(n));                                           
+	      	}     
 	return (0);
 }
