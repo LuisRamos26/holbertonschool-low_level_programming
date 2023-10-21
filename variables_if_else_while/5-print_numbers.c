@@ -15,6 +15,6 @@ int main(void)
 /* print numbers */
 	for (number = 0; number <= 9; number++)
 		printf ("%d", number);
-	printf ('\n');
+	printf ("\n");
 	return (0);
 }
