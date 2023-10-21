@@ -15,11 +15,11 @@ int main(void)
 /* print numbers*/
 	for (number = 0; number <= 9; number++)
 	{
-		putchar("%d", number);
+		putchar(number);
 		if (number < 9)
 			putchar(", ");
 		else
-			putchar (number < 9);
+			putchar(number);
 
 	}
 	printf("\n");
