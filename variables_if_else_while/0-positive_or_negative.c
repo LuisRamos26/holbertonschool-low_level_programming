@@ -5,9 +5,7 @@
 /* more headers goes there */
 /**
  * main - Entry point
- * 
  * Description: 'Positive or negative'
- * 
  * Return: Always 0 (Success)
  */
 /* betty style doc for function main goes there */
