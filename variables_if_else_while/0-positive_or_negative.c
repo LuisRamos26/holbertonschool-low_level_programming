@@ -3,6 +3,10 @@
 #include <stdio.h>
 
 /* more headers goes there */
+/**
+ * This project is for identify random number
+ * Hello
+ */
 /* betty style doc for function main goes there */
 int main(void)
 {
