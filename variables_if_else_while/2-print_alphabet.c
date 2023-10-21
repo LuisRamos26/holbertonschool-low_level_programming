@@ -4,7 +4,7 @@
 
 /**
 * main - Entry point
-* Description: 'Positive or negative'
+* Description: 'How to print alphabet'
 * Return: Always 0 (Success)
 */
 /* betty style doc for function main goes there */
@@ -12,7 +12,7 @@
 int main(void)
 {
 	char alphabet;
-	
+/* print alphabet*/
 	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 		putchar (alphabet);
 	putchar ('\n');
