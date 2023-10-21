@@ -12,7 +12,7 @@
 int main(void)
 {
 	int number;
-/* print numbers*/
+/* print numbers */
 	for (number = 0; number <= 9; number++)
 		printf ("%d", number);
 	printf ('\n');
