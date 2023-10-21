@@ -15,6 +15,6 @@ int main(void)
 /* print alphabet*/
 	for (alphabet = 'z'; alphabet >= 'a'; alphabet--)
 		putchar(alphabet);
-		putchar('\n');
+	putchar('\n');
 	return (0);
 }
