@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-*main - Entry poiint
-*Description: 'print alphabet'
-*Return: Alwavys 0 (Succes)
-*/
+ * print_alphabet - Check description
+ * Description: prints the alphabet in lowercase
+ * Return: Nothing.
+ */
 void print_alphabet(void)
 {
 	char i;
