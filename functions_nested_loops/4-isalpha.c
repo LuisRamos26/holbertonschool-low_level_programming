@@ -20,4 +20,5 @@ int _isalpha(int c)
 				result = 1;
 		}
 	return (result);
+	}
 }
