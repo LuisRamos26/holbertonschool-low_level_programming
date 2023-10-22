@@ -8,8 +8,8 @@
 int _islower(int c)
 {
 	char i;
-	int result;
-
+	int result = 0;
+	/* function*/
 	for (i = 'a'; i <= 'z'; i++)
 	{
 		if (i == c)
@@ -18,5 +18,4 @@ int _islower(int c)
 			result = 0;
 	}
 	return (result);
-	 
 }
