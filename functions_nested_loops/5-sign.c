@@ -9,7 +9,6 @@
 int print_sign(int n)
 {
 	int value;
-	
 	/* function*/
 	if (n > 0)
 	{
