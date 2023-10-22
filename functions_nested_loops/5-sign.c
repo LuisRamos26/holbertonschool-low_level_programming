@@ -9,23 +9,23 @@
 int _isalpha(int c)
 {
 	int value;
-	int result;
+	
 	/* function*/
 	if (c > 0)
 	{
 		value = 1;
-		result = _putchar('+, %d', value);
+		result = _putchar('+');
 	}
 	else if (c == 0)
 	{
 		value = 0;
-		result = _putchar('0, %d', value);
+		result = _putchar('0');
 	}
 	else
 	{
 		value = -1;
-		result = _putchar('-, %d', value);
+		result = _putchar('-');
 	}
 
-	return (result);
+	return (value);
 }
