@@ -2,7 +2,7 @@
 /**
  * _islower - Check main.h
  * Description: Funciton checks if the caracter is lowercase
- * Return: Result
+ * Return Result
  */
 
 int _islower(int c)
