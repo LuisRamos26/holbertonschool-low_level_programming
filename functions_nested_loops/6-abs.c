@@ -6,14 +6,10 @@
  * Return: 1 for positive numbers, 0 for zero and -1 for negative
  */
 
-int _abs(int value)
+int _abs(int r)
 {
-	/*function]*/
-	if (value > 0)
-		return (value);
+	if (r >= 0)
+		return (r);
 	else
-	{
-		value = value * -1;
-		return (value);
-	}
+		return (r * -1);
 }
