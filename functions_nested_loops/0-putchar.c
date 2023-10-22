@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 /**
  *main - Entry poiint
  *Description: 'pint text'
@@ -6,6 +6,12 @@
  */
 int main(void)
 {
-	printf("/_putchar");
+	char text[] = "_putchar"
+	int i;
+
+	for (i = 0, i < 8, i++)
+	{
+		_putchar(text[i]);
+	}
 	return (0);
 }
