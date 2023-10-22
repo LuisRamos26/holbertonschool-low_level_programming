@@ -1,22 +1,22 @@
 #include "main.h"
 /**
- * _isalpha - Check main.h
- * @c: is an input character
- * Description: function uses to identify lowercase and uppercase characters
- * Return: 1 if is lowercase/uppercar
+ * print_sign - Check main.h
+ * @n: is an input number
+ * Description: function uses to identify sing of the number
+ * Return: 1 for positive numbers, 0 for zero and -1 for negative
  */
 
-int _isalpha(int c)
+int print_sign(int n)
 {
 	int value;
 	
 	/* function*/
-	if (c > 0)
+	if (n > 0)
 	{
 		value = 1;
 		result = _putchar('+');
 	}
-	else if (c == 0)
+	else if (n == 0)
 	{
 		value = 0;
 		result = _putchar('0');
