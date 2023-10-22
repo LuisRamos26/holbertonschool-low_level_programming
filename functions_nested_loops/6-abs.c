@@ -8,9 +8,9 @@
  */
 int _abs(int value)
 {
-	if (r >= 0)
+	if (value >= 0)
 		return(value);
 	else
-		return (r * -1);
+		return (value * -1);
 
 }
