@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <main.h>
 /**
  *main - Entry poiint
  *Description: 'pint text'
