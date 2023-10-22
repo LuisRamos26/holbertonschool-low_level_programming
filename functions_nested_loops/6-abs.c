@@ -8,7 +8,6 @@
 
 int _abs(int value)
 {
-	int value;
 	/*function]*/
 	if (value > 0)
 		return (value);
