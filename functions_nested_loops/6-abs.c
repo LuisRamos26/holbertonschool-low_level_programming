@@ -4,7 +4,7 @@
  * _abs - check main.h
  * @value: an integer input
  * Description: returns absolute value of a number
- * Return: Absolute value 
+ * Return: Absolute value
  */
 int _abs(int value)
 {
