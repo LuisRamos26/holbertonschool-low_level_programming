@@ -5,7 +5,6 @@
 *Description: 'print alphabet'
 *Return: Alwavys 0 (Succes)
 */
-
 void print_alphabet(void)
 {
 	char i;
