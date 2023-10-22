@@ -1,18 +1,15 @@
-#include "main"
+#include "main.h"
 
 /**
-*main - Entry poiint
-*Description: 'print alphabet'
-*Return: Alwavys 0 (Succes)
-*/
-
-int main(void)
+ * print_alphabet - Check description
+ * Description: prints the alphabet in lowercase
+ * Return: Nothing.
+ */
+void print_alphabet(void)
 {
-	int alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
-		
-	for (i = o; i < 26; i++)
-		_putchar(alphabet[i]);
+	char i;
+	/* print alphabet*/
+	for (i = 'a'; i <= 'z'; i++)
+		_putchar(i);
 	_putchar('\n');
-	return (0);
 }
