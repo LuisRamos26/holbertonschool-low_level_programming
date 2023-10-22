@@ -6,7 +6,7 @@
  * Return: 1 for positive numbers, 0 for zero and -1 for negative
  */
 
-int _abs(int)
+int _abs(int value)
 {
 	int value;
 	/*function]*/
