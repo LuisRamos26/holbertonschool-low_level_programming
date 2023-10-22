@@ -13,14 +13,14 @@ int main(void)
 {
 	int number;
 /* print numbers*/
-	for (number = 0; number <= 9; number++)
-	{
-		putchar("%d", number);
-		if (number < 9)
-			putchar(", ");
-		else
-			putchar (number < 9);
-
+	for (number = '0'; number <= '9'; number++)
+{
+		putchar(number);
+		if (number != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	printf("\n");
 	return (0);
