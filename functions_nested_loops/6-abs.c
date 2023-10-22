@@ -6,8 +6,9 @@
  * Description: returns absolute value of a number
  * Return: Absolut value of number r
  */
-int _abs(int r)
+int _abs(int)
 {
+	int r;
 	if (r >= 0)
 		return (r);
 	else
