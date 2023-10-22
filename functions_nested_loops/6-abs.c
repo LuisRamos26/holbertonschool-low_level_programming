@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- * print_sign - Check main.h
- * @n: is an input number
- * Description: function uses to identify sing of the number
- * Return: 1 for positive numbers, 0 for zero and -1 for negative
+ *_abs - Check main
+ * @r: An integer input
+ * Description: returns absolute value of a number
+ * Return: Absolut value of number r
  */
 int _abs(int r)
 {
