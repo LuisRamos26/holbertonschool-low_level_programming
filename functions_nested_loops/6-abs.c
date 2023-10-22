@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- *_abs - Check main
- * @r: An integer input
+ * _abs - check main.h
+ * @value: an integer input
  * Description: returns absolute value of a number
- * Return: Absolut value of number r
+ * Return: Absolute value
  */
-int _abs(int)
+int _abs(int value)
 {
-	int r;
 	if (r >= 0)
-		return (r);
+		return(value);
 	else
 		return (r * -1);
+
 }
