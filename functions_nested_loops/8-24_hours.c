@@ -6,17 +6,19 @@
  * Description: This function prints the last digit of a number
  * Return: last digit of number r
  */
-void jack_bauer(void);
+void jack_bauer(void)
 {
-	int i;
-	int j;
-	/*function*/
-	for (i = 0; i <=24; i++)
+	int hour, minute;
+	/* function */
+	for (hour = 0; hour <= 23; hour++)
 	{
-		for (j = 0; j <=60; j++)
-			_putchar
+		for (minute = 0; minute <= 59; minute++)
+		{
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
+			_putchar(':');
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) + '0');
+			_putchar('\n');
+		}
 	}
-
-	_putchar((n % 10) + '0');
-	return  (n % 10);
-}
