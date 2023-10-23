@@ -1,12 +1,37 @@
-#include "main.h"
+#include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
-    * Return: Always 0.
+ * print_to_98 - Check Holberton
+ * @n: A input integer
+ * Description: function that prints all natural numbers
+ * from n to 98, followed by a new line.
+ * Return: Nothing
  */
-int main(void)
+void print_to_98(int n)
 {
-  times_table();
-  return (0);
+	if (n <= 98)
+	{
+		for (; n <= 98; n++)
+		{
+			printf("%d", n);
+
+			if (n == 98)
+				continue;
+			printf(", ");
+		}
+		printf("\n");
+	}
+	else
+	{
+		for (; n >= 98; n--)
+		{
+			printf("%d", n);
+
+			if (n == 98)
+				continue;
+			printf(", ");
+		}
+		printf("\n");
+	}
 }
