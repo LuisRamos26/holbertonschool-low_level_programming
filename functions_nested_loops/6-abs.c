@@ -4,13 +4,12 @@
  * _abs - check main.h
  * @value: an integer input
  * Description: returns absolute value of a number
- * Return: Absolute value 
+ * Return: Absolute value
  */
 int _abs(int value)
 {
-	if (r >= 0)
-		return(value);
+	if (value >= 0)
+		return (value);
 	else
-		return (r * -1);
-
+		return (value * -1);
 }
