@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * jack_bauer - Check Holberton
- * @r: An integer input
- * Description: This function prints the last digit of a number
- * Return: last digit of number r
+ * jack_bauer - Check main
+ * Description: Print every hour and minute
+ * Return: nothing
  */
 void jack_bauer(void)
 {
