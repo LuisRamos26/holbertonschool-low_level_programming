@@ -4,10 +4,10 @@ OBJ = ${SRC:.c=.o}
 NAME = school
 RM = rm -f 
 
-all: ${OBJ}
+all : ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
 
-.PHONY: clean oclean fclean re
+.PHONY : clean oclean fclean re
 clean :
 	${RM} *~ ${NAME}
 oclean :
