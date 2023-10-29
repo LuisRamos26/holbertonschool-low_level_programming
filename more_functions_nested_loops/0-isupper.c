@@ -10,14 +10,12 @@
 int _isupper(int c)
 {
 	int i;
-	int result;
+	int result = 0;
 	/* verify charactare statement*/
 	for (i ='A';i <= 'Z'; i++)
 	{
 		if (c == i)
 			result = 1;
-		else
-			result = 0;
 	}
 	return (result);
 
