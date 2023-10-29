@@ -12,7 +12,7 @@ int _isupper(int c)
 	int i;
 	int result;
 	/* verify charactare statement*/
-	for (i ='A',i <= 'Z', i++)
+	for (i ='A';i <= 'Z'; i++)
 	{
 		if (c == i)
 			result = 1;
