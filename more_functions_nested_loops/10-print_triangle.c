@@ -1,26 +1,28 @@
 #include "main.h"
 
 /**
- * print_diagonal -  draws a diagonal line on the terminal..
- * @n: is the quantity of diagonals
- * Return: .
+ * print_triangle -  a function that prints a triangle, followed by a new line.
+ * @size: An input integer
+ * Return: Always 0
  */
-
-
-void print_diagonal(int n)
+void print_triangle(int size)
 {
 	int i;
 	int j;
-	/* Print diagonal.*/
-	if (n > 0)
+	int n = size - 1;
+
+	if (size > 0)
 	{
-		for (i = 0; i < n ; i++)
+		for (i = 0 ; i < size; i++)
 		{
-			for (j = 0; j < i; j++)
+			for (j = 0; j < size; j++)
 			{
-				_putchar(' ');
+				if (j < n)
+					_putchar(' ');
+				else
+					_putchar('#');
 			}
-			_putchar('#');
+			n--;
 			_putchar('\n');
 		}
 	}
