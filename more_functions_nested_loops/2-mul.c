@@ -13,6 +13,6 @@ int mul(int a, int b)
 	int result;
 	/* multiplies two integers.*/
 	result = a * b;
-	return (0);
+	return (result);
 
 }
