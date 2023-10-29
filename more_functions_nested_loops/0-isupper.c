@@ -9,7 +9,6 @@
 
 int _isupper(int c)
 {
-	char c;
 	int i;
 	int result;
 	/* verify charactare statement*/
