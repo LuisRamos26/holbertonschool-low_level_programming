@@ -3,9 +3,9 @@ SRC = main.c school.c
 OBJ = ${SRC:.c=.o}
 NAME = school
 RM = rm -f 
-FLAGS = -Wall
+CFLAGS = -Wall -Werror -Wextra -pedantic
 all : ${OBJ}
-	${CC} ${FLAGS} ${OBJ} -o ${NAME}
+	${CC} ${OBJ} -o ${NAME}
 clean:
 	${RM} *~ ${NAME}
 oclean:
