@@ -14,7 +14,7 @@ void print_numbers(void)
 	/* Print numbers.*/
 	for (i = 0; i <= 9; i++)
 		_putchar(i);
-	_putchar(i,'\n');
-	return (0);
+	_putchar('\n');
+	return(0);
 
 }
