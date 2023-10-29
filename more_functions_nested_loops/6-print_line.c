@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_most_numbers - Print numbers from 0 to 9 without 2 and 4.
+ * print_line -  draws a straight line in the terminal..
  * Return: .
  */
 
@@ -9,7 +9,7 @@
 void print_line(int n)
 {
 	int i;
-	/* Print numbers.*/
+	/* Print line.*/
 	for (i = 0; i < n ; i++)
 	{
 		if (i > 0)
