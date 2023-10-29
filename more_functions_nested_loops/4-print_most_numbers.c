@@ -11,7 +11,8 @@ void print_most_numbers(void)
 	int i;
 	/* Print numbers.*/
 	for (i = 48; i <= 57; i++)
-	{	if (i == 50)
+	{	
+		if (i == 50)
 		{ 
 		}
 		else if (i != 52)
