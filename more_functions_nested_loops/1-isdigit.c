@@ -1,4 +1,4 @@
-#include "main.h"
+#include 'main.h'
 
 /**
  * _isdigit - check if the character is a digit.
@@ -7,7 +7,7 @@
  */
 
 
-int _isupper(int c)
+int _isdigit(int c)
 {
 	int i;
 	int result = 0;
