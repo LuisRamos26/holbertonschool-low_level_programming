@@ -1,15 +1,14 @@
 #include"main.h"
 
 /**
- * _strlen - Cheks the lengh of the text
- * @s: An input character
- * Return: Lenth of the text
+ * _puts - Print a string
+ * @str: An input string
+ * Return: Nothing
  */
 
 void _puts(char *str)
 {
 	int len = 0;
-	int i;
 	/* count length of char */
 	while (str[len] != '\0')
 	{
