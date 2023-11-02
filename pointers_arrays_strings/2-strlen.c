@@ -1,18 +1,17 @@
 #include"main.h"
 
 /**
- * swap_int - Swap values betwen a & b
- * @a: An input value
- * @b: An input value
- * return - nothing
+ * _strlen - Cheks the lengh of the text
+ * @s: An input character
+ * return - Lenth of the text
  */
 
 int _strlen(char *s)
 {
 	int len = 0;
-	/* count length of char */	
+	/* count length of char */
 	while (s[len] != '\0')
-		len++;					
+		len++;		
 	return (len);
 
 }
