@@ -10,13 +10,12 @@
 
 char *_strcpy(char *dest, char *src)
 {
-
-	while
-	for (i = 0; i < n; i++)
-	{
-		printf("%d", a[i]);
-		if (i < n - 1)
-			printf(", ");
-	}
-	putchar('\n');
+	int i;
+	
+	while (src[len] != '\0')
+		len++;
+	len++;
+	for (i = 0; i <= len; i++)
+		dest[i] = src[i];
+	return(dest[len]);
 }
