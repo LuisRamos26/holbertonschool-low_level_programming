@@ -4,7 +4,7 @@
 /**
  * print_array -  prints n elements of an array of integers.
  * @a: An input value
- * @n: An input value 
+ * @n: An input value
  * Return: Nothing
  */
 
