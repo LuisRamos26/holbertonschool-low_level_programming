@@ -13,7 +13,7 @@ void puts2(char *str)
 	/* count length of char */
 	while (str[len] != '\0')
 		len++;
-	for (i = 0; i >= (len -1); i++)
+	for (i = 0; i >= len; i++)
 		_putchar(str[i]);
 	_putchar('\n');
 }
