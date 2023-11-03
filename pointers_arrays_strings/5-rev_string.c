@@ -13,8 +13,8 @@ void rev_string(char *s)
 	/* count length of char */
 	while (s[len] != '\0')
 	{
-		len++;
 		_putchar(s[len]);
+		len++;
 	}
 	_putchar('\n');
 	for (j = (len - 1); j >= 0; j--)
