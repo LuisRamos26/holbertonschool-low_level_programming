@@ -9,7 +9,6 @@
 void rev_string(char *s)
 {
 	int len = 0;
-	int i;
 	int j;
 	/* count length of char */
 	while (s[len] != '\0')
