@@ -13,15 +13,9 @@ char *_strcat(char *dest, char *src)
 	int len2 = 0;
 	/* count length of char */
 	while (src[len1] != '\0')
-	{
-		_putchar(src[len1]);
 		len1++;
-	}
 	while (dest[len2] != '\0')
-	{
-		_putchar(dest[len2] != '\0');
-		len2++;
-	}	
-	dest = src[len1] + dest[len2];
+		len2++;	
+	dest = src[len1] + dest[len2 + 1];
 	return(dest);
 }
