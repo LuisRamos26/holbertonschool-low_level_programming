@@ -9,16 +9,16 @@
 
 char *_strcat(char *dest, char *src)
 {
-	while (*str1) 
-		str1++;
+	while (*src) 
+		src++;
     /* Copy characters of the second string to the end of the first string */
-   	 while (*str2) 
+   	 while (*dest) 
 	 {
-        	*str1 = *str2;
-       	 	str1++;
-       	 	str2++;
+        	*src = *dest;
+       	 	src++;
+       	 	dest++;
 	 }
-    *str1 = '\0';  /* Terminate the concatenated string */
+    *src = '\0';  /* Terminate the concatenated string */
 }
 
 }
