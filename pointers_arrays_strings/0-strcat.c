@@ -20,5 +20,3 @@ char *_strcat(char *dest, char *src)
 	 }
     *src = '\0';  /* Terminate the concatenated string */
 }
-
-
