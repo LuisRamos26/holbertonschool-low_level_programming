@@ -1,9 +1,10 @@
 #include"main.h"
 
 /**
- * _puts - Print a string
+ * *_strcat - Concatenate strings
  * @str: An input string
- * Return: Nothing
+ * @dest: An input string
+ * Return: Dest
  */
 
 char *_strcat(char *dest, char *src);
@@ -18,8 +19,9 @@ char *_strcat(char *dest, char *src);
 	}
 	while (dest[len2] != '\0')
 	{
-		_putchar(dest[len2]);
+		_putchar(dest[len2] != '\0');
 		len2++;
 	}	
-	_putchar('\n');
+	dest = src[len] + dest[len2];
+	return(dest);
 }
