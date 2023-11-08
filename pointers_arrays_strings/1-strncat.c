@@ -4,7 +4,8 @@
  * *_strcat - Concatenate strings
  * @src: An input string
  * @dest: An input string
- * Return: Dest
+ * @n: An input value
+ * Return: temp
  */
 
 char *_strncat(char *dest, char *src, int n)
