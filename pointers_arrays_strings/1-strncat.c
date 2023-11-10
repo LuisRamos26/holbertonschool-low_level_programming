@@ -26,7 +26,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	if (n > srclen)
 		/*Sí el conteo de src es mayor que n, entonces n cambia su valor*/
-		n = srclen; 
+		n = srclen;
 
 	src = start; /*Vuelve el apuntador al incio de src*/
 
