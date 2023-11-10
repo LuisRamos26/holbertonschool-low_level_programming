@@ -20,7 +20,7 @@ char *_strncpy(char *dest, char *src, int n)
 		srclen++; /*Conteo para la longitud de src*/
 		src++;
 	}
-	
+	srclen++;
 	if (n > srclen)
 		/*Sí el conteo de src es mayor que n, entonces n cambia su valor*/
 		n = srclen;
