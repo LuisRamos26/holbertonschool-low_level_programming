@@ -29,7 +29,5 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (i = 0; i < n; i++)
 		*dest++ = *src++; /*Copy src to dest*/
-
-	*dest = '\0';
 	return (temp);
 }
