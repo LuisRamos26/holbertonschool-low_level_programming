@@ -1,23 +1,22 @@
 #include"main.h"
-#include<stdio.h>
 
 /**
- * *_strchr - locates a character in a string.
+ * _strspn - gets the length of a prefix substring.
  * @s: Input string
- * @c : Input character
- * Return: location
- */
+ * @c : Input accepter characters
+ * Return: s
 
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-
+	int accepted = 0;
+	
 	while (*s)
 	{
 		if (c == *s)
-			return (s);
+			accepted++;
 		s++;
+		
 	}
-	if (c == *s)
-		return (s);
-	return (NULL);
+	
+	return (accepted);
 }
