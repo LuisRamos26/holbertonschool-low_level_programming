@@ -1,27 +1,27 @@
 #include"main.h"
 
 /**
- * cap_string - a function that capitalizes all words of a string.
- * @s: An input string to capitalize letters
- * Return: s
+ * *leet g - encodes a string into 1337.
+ * @c: An input string to capitalize letters
+ * Return: c
  */
-char *cap_string(char *s)
+char *leet(char *c)
 {
 	int i = 0;
-	int j;
-	char seperators[13] = { ' ', '\t', '\n', ',', ';', '.', '!', '?',
-		'"', '(', ')', '{', '}' };
-
-	while (s[i])
+	
+	while (c[i])
 	{
-		if (s[0] >= 'a' && s[0] <= 'z')
-			s[i] -= 32;
-		for (j = 0; j < 13; j++)
-		{
-			if (s[i] == seperators[j] && (s[i + 1] >= 'a' && s[i + 1] <= 'z'))
-				s[i + 1] -= 32;
-		}
+		if (c[i] == 'a' || c[i] == 'A')
+			c[i] = '4';
+		else if (c[i] == 'e' || c[i] == 'E')
+			c[i] = '3';
+		else if (c[i] == 'o' || c[i] == 'O')
+			c[i] = '0';
+		else if (c[i] == 't' || c[i] == 'T')
+			c[i] = '7';
+		else if (c[i] == 'l' || c[i] == 'L')
+			c[i] = '1';
 		i++;
 	}
-	return (s);
+	return (c);
 }
