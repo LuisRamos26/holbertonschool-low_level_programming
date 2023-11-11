@@ -4,7 +4,7 @@
  * *_memset -  fills memory with a constant byte
  * @s: Pointer adress
  * @b: Constant byte
- * @n: Qty of bytes 
+ * @n: Qty of bytes
  * Return: start
  */
 
@@ -19,4 +19,4 @@ char *_memset(char *s, char b, unsigned int n)
 			s++;
 		}
 	return (start);
-} 
+}
