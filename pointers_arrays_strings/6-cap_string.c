@@ -8,6 +8,7 @@
 char *cap_string(char *s)
 {
 	int i = 0;
+	int j;
 	char seperators[13] = { ' ', '\t', '\n', ',', ';', '.', '!', '?',
 		'"', '(', ')', '{', '}' };
 
@@ -15,9 +16,9 @@ char *cap_string(char *s)
 	{
 		if (s[0] >= 'a' && s[0] <= 'z')
 				s[i] -= 32;
-		for (; i < 13; i++)
+		for (j = 0; j < 13; j++)
 		{
-			if (s[i] == seperators[i] && (s[i + 1] >= 'a' && s[i + 1] <= 'z'))
+			if (s[i] == seperators[j] && (s[i + 1] >= 'a' && s[i + 1] <= 'z'))
 				s[i + 1] -= 32;		
 		}
 		i++;
