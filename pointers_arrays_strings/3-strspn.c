@@ -18,15 +18,12 @@ unsigned int _strspn(char *s, char *accept)
 		alen++;
 		accept++;
 	}
-	
 	while (*s)
 	{
-		for (i = 0; i < alen; i++)
+		for (i = 0; i <= alen; i++)
 			if (*accept == *s)
 				accepted++;
 		s++;
-		
 	}
-	
 	return (accepted);
 }
