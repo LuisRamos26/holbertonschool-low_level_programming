@@ -14,7 +14,7 @@ char *leet(char *c)
 	
 	while (c[i])
 	{
-		for (j = 0; j = 10; j++)
+		for (j = 0; j <= 10; j++)
 			if (c[i] == currentVal[j])
 				c[i] = newVal[j];
 		c++;
