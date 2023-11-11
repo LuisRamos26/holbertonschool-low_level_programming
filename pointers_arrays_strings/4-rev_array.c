@@ -9,27 +9,15 @@
 
 void reverse_array(int *a, int n)
 {
-	int alen = 0;
 	int i = 0;
-	int *temp = a;
-	int *start = a;
+	int aux = 0;
 
-	while (*a)
+	while (i < n)
 	{
-		alen++;
-		a++;
+		n--;
+		aux = a[i];
+		a[i++] = a[n];
+		a[n] = aux;
 	}
 
-	if (n > alen)
-		n = alen;
-
-	for (i = 0; i < n; i++)
-	{
-		*start = *a;
-		start++;
-		a--;
-
-	}
-
-	return (0);
 }
