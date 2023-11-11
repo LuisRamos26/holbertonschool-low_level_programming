@@ -21,7 +21,7 @@ void reverse_array(int *a, int n)
 	}
 
 	if (n > alen)
-		n = srclen;
+		n = alen;
 
 	for (i = 0; i < n; i++)
 	{
