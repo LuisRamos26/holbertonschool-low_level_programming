@@ -10,8 +10,6 @@
 
 char *_strchr(char *s, char c)
 {
-	char *location;
-
 	while (*s)
 	{
 		if (*s == c)
