@@ -10,11 +10,20 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int accepted = 0;
+	int i;
+	int alen = 0;
+	
+	while (*accept)
+	{
+		alen++;
+		accept++;
+	}
 	
 	while (*s)
 	{
-		if (c == *s)
-			accepted++;
+		for (i = 0; i < alen; i++)
+			if (*accept == *s)
+				accepted++;
 		s++;
 		
 	}
