@@ -21,7 +21,7 @@ unsigned int _strspn(char *s, char *accept)
 	}
 	while (*s)
 	{
-		*accept = start;
+		accept = start;
 		for (i = 0; i <= alen; i++)
 		{
 			if (*accept == *s)
