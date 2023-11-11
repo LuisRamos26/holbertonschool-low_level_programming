@@ -8,20 +8,16 @@
 char *leet(char *c)
 {
 	int i = 0;
+	int j = 0;
+	char currentVal[10] = {'a','A','e','E','o','O','t','T','l','L'};
+	char newVal[10] = {'4','4','3','3','0','0','7','7','1','1'};
 	
 	while (c[i])
 	{
-		if (c[i] == 'a' || c[i] == 'A')
-			c[i] = '4';
-		else if (c[i] == 'e' || c[i] == 'E')
-			c[i] = '3';
-		else if (c[i] == 'o' || c[i] == 'O')
-			c[i] = '0';
-		else if (c[i] == 't' || c[i] == 'T')
-			c[i] = '7';
-		else if (c[i] == 'l' || c[i] == 'L')
-			c[i] = '1';
-		i++;
+		for (j = 0, j = 10; j++)
+			if (c[i] == currentVal[j])
+				c[i] = newVal[j];
+		c++;
 	}
 	return (c);
 }
