@@ -1,9 +1,9 @@
 #include"main.h"
 
 /**
- * *leet g - encodes a string into 1337.
- * @c: An input string to capitalize letters
- * Return: c
+ * *leet - encodes a string into 1337.
+ * @s: An input string to capitalize letters
+ * Return: s
  */
 char *leet(char *s)
 {
