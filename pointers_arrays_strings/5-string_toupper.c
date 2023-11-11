@@ -2,19 +2,19 @@
 
 /**
  * *string_toupper -Change lowercase to uppercase
- * @a: An input value
- * Return: 0
+ * @str: An input character
+ * Return: start
  */
 
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
-	char *start = s;
+	char *start = str;
 
-	while (*s)
+	while (*str)
 	{
-		if (*s >= 'a' && *s <= 'z')
-			*s -= 32;
-		s++;
+		if (*str >= 'a' && *str <= 'z')
+			*str -= 32;
+		str++;
 	}
 	return (start);
 
