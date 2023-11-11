@@ -5,17 +5,18 @@
  * @s: Pointer adress
  * @b: Constant byte
  * @n: Qty of bytes 
- * Return: s
+ * Return: start
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
+	char *start = s;
 
 	for (i = 0; i < n; i++)
 		{
 			*s = b;
 			s++;
 		}
-	return (s);
+	return (start);
 } 
