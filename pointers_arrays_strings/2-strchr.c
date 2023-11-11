@@ -16,7 +16,7 @@ char *_strchr(char *s, char c)
 		if (*s == c)
 			location = s;
 		else
-			location = NULL;
+			location = '\0';
 	}
 	return (location);
 }
