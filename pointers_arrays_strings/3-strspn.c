@@ -12,6 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 	int accepted = 0;
 	int i;
 	int alen = 0;
+	char *start = accept;
 	
 	while (*accept)
 	{
@@ -20,9 +21,15 @@ unsigned int _strspn(char *s, char *accept)
 	}
 	while (*s)
 	{
+		*accept = start;
 		for (i = 0; i <= alen; i++)
+		{
 			if (*accept == *s)
+			{
 				accepted++;
+			}
+			accept++;
+		}		
 		s++;
 	}
 	return (accepted);
