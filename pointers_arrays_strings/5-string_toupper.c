@@ -6,7 +6,7 @@
  * Return: 0
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
 	char *start = s;
 
