@@ -5,6 +5,7 @@
  * @s: Input string
  * @c : Input accepter characters
  * Return: s
+*/
 
 unsigned int _strspn(char *s, char *accept)
 {
