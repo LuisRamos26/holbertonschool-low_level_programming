@@ -9,22 +9,28 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int match = 0;
+	int count = 0<
+	int flag;
 	char *start = accept;
-	/*accepted*/
+
 	while (*s)
 	{
-		accept = start;
+		flag = 0;
 		while (*accept)
 		{
 			if (*accept == *s)
 			{
-				match++;
+				count++;
+				flag = 1;
+				break;
 			}
 			accept++;
 		}
-	}
 		s++;
-	return (match);
+		accept = start;
+		if (flag == 0)
+			break;
+	}
+	return (count);
 }
 	
