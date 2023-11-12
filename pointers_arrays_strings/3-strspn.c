@@ -3,7 +3,7 @@
 /**
  * _strspn - gets the length of a prefix substring.
  * @s: Input string
- * @c : Input accepter characters
+ * @accept : Input accepter characters
  * Return: s
 */
 
