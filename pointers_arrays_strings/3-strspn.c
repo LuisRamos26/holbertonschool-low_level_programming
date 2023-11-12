@@ -10,8 +10,6 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int match = 0;
-	int i;
-	int alen = 0;
 	char *start = accept;
 	/*accepted*/
 	while (*s)
@@ -27,6 +25,6 @@ unsigned int _strspn(char *s, char *accept)
 		}
 	}
 		s++;
-	}
 	return (match);
 }
+	
