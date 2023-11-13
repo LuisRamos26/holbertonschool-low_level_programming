@@ -8,8 +8,6 @@
 
 void _print_rev_recursion(char *s)
 {
-	int slen = 0;
-
 	while(*s)
 		s++;
 
