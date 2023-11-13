@@ -1,10 +1,10 @@
 #include"main.h"
 
 /**
-* _pow_recursion -  returns the natural square root of a number.
-* @n: An input value
-* Return:  natural square root of a number.
-*/
+ * _sqrt_recursion - returns the value of square root of n.
+ * @n: an input integer
+ * Return: The square root of n
+ */
 
 int _sqrt_recursion(int n)
 {
