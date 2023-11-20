@@ -2,15 +2,16 @@
 #include <stdio.h>
 
 /**
- * main - a program that prints its name, followed by a new line
- * @argc: arguement count
- * @argv: argument value, a strings that come after calling function
+ * main - A program that prints all arguements it receives
+ * @argc: The arguement counter
+ * @argv: The arguement values
  * Return: Always 0 (Success)
  */
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	if (argv[0])
-		printf("%d\n", argc - 1);
+	while (argc--)
+	{
+		printf("%s\n", *argv++);
+	}
 	return (0);
 }
