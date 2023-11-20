@@ -2,15 +2,27 @@
 #include <stdio.h>
 
 /**
- * main - a program that prints its name, followed by a new line
- * @argc: arguement count
- * @argv: argument value, a strings that come after calling function
+ * main - A program that multiplies two numbers
+ * @argc: The arguments' counter
+ * @argv: The arguments' values
  * Return: Always 0 (Success)
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	if (argv[0])
-		printf("%d\n", argc - 1);
-	return (0);
+	int num1, num2, result;
+
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	else
+	{
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
+		result = num1 * num2;
+		printf("%d\n", result);
+		return (0);
+	}
 }
