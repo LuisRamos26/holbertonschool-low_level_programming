@@ -3,8 +3,9 @@
 #include <stdlib.h>
 
 /**
- * *create_array - creates an array of chars, and initializes it with a specific char
- * @c: Array of characters 
+ * *create_array - creates an array of chars,
+ * and initializes it with a specific char.
+ * @c: Array of characters
  * @size: the size of the memory to print
  * Return: A pointer to the array, or NULL if it fails.
  */
