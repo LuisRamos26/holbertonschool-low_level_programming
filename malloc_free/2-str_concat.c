@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * *_strdup - concatenates two strings.
+ * *str_concat - concatenates two strings.
  * @s1: input string
  * @s2: input string
  * Return: newly allocated space in memory which contains the
