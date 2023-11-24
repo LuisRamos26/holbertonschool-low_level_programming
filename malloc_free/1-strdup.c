@@ -3,17 +3,26 @@
 #include <stdlib.h>
 
 /**
- * *create_array - creates an array of chars,
- * and initializes it with a specific char.
- * @c: Array of characters
- * @size: the size of the memory to print
- * Return: A pointer to the array, or NULL if it fails.
+ * *_strdup - returns a pointer to a newly 
+ * allocated space in memory, 
+ * which contains a copy of the string given as a parameter.
+ * @str: input string
+ * Return: A pointer to the duplicated string, 
+ * or NULL if insufficient memory was available.
  */
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
 	char *s;
+	int size = 0;
 	unsigned int i = 0;
-
+	start = *str;
+	
+	while (*str)
+	{
+		str++;
+		size++;
+	}
+	*str = start;
 	s = malloc(size * sizeof(char));
 
 	if (s == NULL)
@@ -22,7 +31,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	while (i < size)
 	{
-		s[i] = c;
+		s[i] = str[i];
 		i++;
 	}
 	return (s);
