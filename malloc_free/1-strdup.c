@@ -16,26 +16,26 @@ char *_strdup(char *str)
 	int size = 0;
 	int i = 0;
 	char *start = str;
-	
+	/**/
 	while (*str)
 	{
 		str++;
 		size++;
 	}
 	str = start;
-	s = malloc(size * sizeof(char)+1);
+	s = malloc(size * sizeof(char) + 1);
 
 	if (s == NULL)
 		return (NULL);
 	if (s != NULL)
 	{
 		while (i < size)
-		{	
+		{
 			s[i] = str[i];
 			i++;
 		}
 		return (s);
-	}	
-	else 
+	}
+	else
 		return (s);
 }
