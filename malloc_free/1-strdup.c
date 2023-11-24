@@ -27,12 +27,15 @@ char *_strdup(char *str)
 
 	if (s == NULL)
 		return (NULL);
-	if (size == 0)
-		return (NULL);
-	while (i < size)
+	if (s != NULL)
 	{
-		s[i] = str[i];
-		i++;
-	}
-	return (s);
+		while (i < size)
+		{	
+			s[i] = str[i];
+			i++;
+		}
+		return (s);
+	}	
+	else 
+		return (s);
 }
