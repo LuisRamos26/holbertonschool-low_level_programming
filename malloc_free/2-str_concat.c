@@ -3,39 +3,50 @@
 #include <stdlib.h>
 
 /**
- * *_strdup - returns a pointer to a newly
- * allocated space in memory,
- * which contains a copy of the string given as a parameter.
- * @str: input string
- * Return: A pointer to the duplicated string,
- * or NULL if insufficient memory was available.
+ * *_strdup - concatenates two strings.
+ * @s1: input string
+ * @s2: input string
+ * Return: newly allocated space in memory which contains the
+ * concatenated strings.
+ * if NULL is passed, treat it as an empty string
+ * The function should return NULL on failure
  */
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
 	char *s;
-	int size = 0;
+	int s1len = 0;
+	int s2len = 0;
 	int i = 0;
-	char *start = str;
+	char *temp = s2;
+	char *start = s1;
 	/**/
 
-	if (str == NULL)
+	if (s1 == NULL )
 		return (NULL);
-	while (*str)
+	while (*s1)
 	{
-		str++;
-		size++;
+		s1len++;
+		s1++;
 	}
-	str = start;
-	s = malloc(size * sizeof(char) + 1);
+	s1len++;
+	s1 = start;
+	while (*s2)
+	{
+		s2len++;
+		s2++;
+	}
+	s2 = temp;
+	
+	s = malloc((s1 + s2) * sizeof(char) + 1);
 	if (s != NULL)
 	{
-		while (i < size)
+		while (i < (s1 + s2))
 		{
-			s[i] = str[i];
+			*dest++ = *src++;
 			i++;
 		}
 		return (s);
 	}
 	else
-		return (s);
+		return (NULL);
 }
