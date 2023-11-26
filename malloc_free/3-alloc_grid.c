@@ -3,54 +3,31 @@
 #include <stdlib.h>
 
 /**
- * *str_concat - concatenates two strings.
- * @s1: input string
- * @s2: input string
- * Return: newly allocated space in memory which contains the
- * concatenated strings.
- * if NULL is passed, treat it as an empty string
- * The function should return NULL on failure
+ * alloc_grid - A function that returns a pointer to a
+ * 2 dimensional array of integers
+ * @width: An input integer at number of columns
+ * @height: An input integer at number of rows
+ * Return: pointer to a 2D array, NULL on failure
  */
-char *str_concat(char *s1, char *s2)
+int **alloc_grid(int width, int height)
 {
-	char *new_str, *starts1, *starts2;
-	int i = 0, lens1 = 0, lens2 = 0;
+	int **array, i = 0, j = 0;
 
-	starts1 = s1;
-	starts2 = s2;
-	if (s1 == NULL)
-		s1 = "";
-	while (*s1)
-	{
-		lens1++;
-		s1++;
-	}
-	s1 = starts1;
-	if (s2 == NULL)
-		s2 = "";
-	while (*s2)
-	{
-		lens2++;
-		s2++;
-	}
-	s2 = starts2;
-	new_str = malloc(sizeof(char) * (lens1 + lens2 + 1));
-	starts1 = new_str;
-	if (new_str == NULL)
+	if (width <= 0 || height <= 0)
 		return (NULL);
-	for (; i < (lens1 + lens2); i++)
+
+	array = (int **)malloc(sizeof(int *) * height);
+	if (array == NULL)
+		return (NULL);
+	for (; i < height; i++)
 	{
-		if (i < lens1)
-		{
-			new_str[i] = *s1;
-			s1++;
-		}
-		else
-		{
-			new_str[i] = *s2;
-			s2++;
-		}
+		array[i] = (int *)malloc(sizeof(int) * width);
+		if (array[i] == NULL)
+			return (NULL);
 	}
-	new_str[i] = '\0';
-	return (starts1);
+
+	for (i = 0; i < height; i++)
+		for (; j < width; j++)
+			array[i][j] = 0;
+	return (array);
 }
