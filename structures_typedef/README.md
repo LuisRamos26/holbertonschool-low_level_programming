@@ -1,0 +1,2 @@
+Strucure type def
+
