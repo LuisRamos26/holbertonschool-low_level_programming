@@ -1,15 +1,31 @@
+#include "3-calc.h"
+#include <stdio.h>
 #include <stdlib.h>
-#include "function_pointers.h"
+#include <string.h>
 
 /**
- * print_name - a function that prints a name.
- * @name: pointer to name to print
- * @f: function to print name
- * Return: Nothing
+ * main - program to perform simple operations
+ * @argc: argument count
+ * @argv: array of arguments
+ * Return: exits 0 normally, 98 on argc error, 99 on illegal operator
  */
-void print_name(char *name, void (*f)(char *name))
+int main(int argc, char *argv[])
 {
-	if (name == NULL || f == NULL)
-		return;
-	f(name);
+	int (*func)(int, int);
+
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+
+	func = get_op_func(argv[2]);
+	if (func == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	printf("%d\n", func(atoi(argv[1]), atoi(argv[3])));
+	return (0);
 }
